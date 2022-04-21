@@ -57,3 +57,20 @@ footer p {
 nav a:hover {
     color: #fc77e3;
 }
+
+.contact-form input {
+    width: 100%;
+    padding: 8px 0px;
+    margin: 8px 0px;
+}
+
+.contact-form input[type=text]{
+    height: 100px;
+}
+
+button{
+    background-color: #fc77e3;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
