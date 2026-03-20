@@ -933,6 +933,26 @@
       .education-block, .edu2-block { grid-template-columns: 1fr; gap: 0.8rem; }
       .contact-links { flex-direction: column; align-items: center; }
       footer { flex-direction: column; gap: 0.8rem; text-align: center; }
+
+      /* works section mobile */
+      .works-header { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+      .works-header .projects-note { text-align: left; max-width: 100%; }
+      .work-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        padding: 1.5rem 0;
+      }
+      .work-item-right {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .work-tags { flex-wrap: wrap; }
+      .work-name { font-size: clamp(1.6rem, 7vw, 2.2rem); }
     }
   </style>
 </head>
@@ -994,7 +1014,7 @@
     </p>
 
     <div class="hero-cta">
-      <a href="#projetos" class="btn-primary">Ver projetos →</a>
+      <a href="#works" class="btn-primary">Ver projetos →</a>
       <a href="#contato" class="btn-ghost">Falar comigo</a>
     </div>
 
@@ -1287,8 +1307,6 @@
       document.body.classList.toggle('light', isLight);
       themeLabel.textContent = isLight ? 'Rose' : 'Dark';
       themeIcon.textContent  = isLight ? '☀️' : '🌙';
-      // re-run lit words so colors update instantly
-      updateLitWords();
     });
 
     // Hamburger menu
